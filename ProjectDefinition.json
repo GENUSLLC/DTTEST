@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "http://www.ibm.com/dba/solutions/solution1/DTTEST/ProjectDefinition.json",
+  "title": "DTTEST",
+  "ba_description": "",
+  "ba_type": "content",
+  "ba_repoPrimaryKey": "DTTEST",
+  "ba_expectedDocTypes": 0,
+  "ba_id": "6517b8ad-311e-4b42-ad65-cd8b8c254e22",
+  "ba_dataDefinitions": [],
+  "ba_contentDefinitions": [
+    {
+      "$ref": "CD_UtilityBill.json",
+      "title": "Utility Bill",
+      "caDocTypeId": "a2827178-33da-403b-aaa8-b0bb3b820959"
+    },
+    {
+      "$ref": "CD_BillOfLading.json",
+      "title": "Bill of Lading",
+      "caDocTypeId": "63842cbd-c858-4a5d-955c-7825edb7da25"
+    },
+    {
+      "$ref": "CD_Invoice.json",
+      "title": "Invoice",
+      "caDocTypeId": "b65d6596-71e0-4def-92e4-fc5e04ff4e66"
+    },
+    {
+      "$ref": "CD_WageandTax.json",
+      "title": "Wage and Tax",
+      "caDocTypeId": "19ed0fd0-9419-4ae0-8f99-fb4425cec379"
+    },
+    {
+      "$ref": "CD_MortgageAgreement.json",
+      "title": "Mortgage Agreement",
+      "caDocTypeId": "aacba956-e3b6-445d-aff3-50d29da4740f"
+    }
+  ],
+  "ba_caDefinitions": "caDefinitions.json",
+  "ba_caProjectDescriptor": "8198d978-7bcb-49ba-aacf-56ff3125f3dd",
+  "ba_snapshotName": "v1-2023-08-23-2127",
+  "ba_versionId": "1f4e462d-35a3-47b3-b934-a1590ef6bebd",
+  "ba_caMLModel": "MLmodel.zip",
+  "ba_versionNotes": "",
+  "ba_caClassificationModelTrainingId": "2c03ad0f-62b8-4b4a-a1e5-24aa43382e7c",
+  "ba_caDataExtractionModelTrainingId": "86812b1a-7990-4b30-a01d-fe855939ee42"
+}

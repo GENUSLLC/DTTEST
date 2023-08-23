@@ -1,0 +1,115 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://www.ibm.com/dba/projects/DTTEST/CD_WageandTax.json",
+    "title": "DTTEST Document Type Definitions",
+    "lastUpdatDate": "",
+    "lastUpdate": "",
+    "comment": "This is a Doc Type Definition showing some different property types",
+    "baForDeployment": true,
+    "definitions": {
+        "WageandTax": {
+            "$id": "#WageandTax",
+            "title": "Wage and Tax",
+            "allOf": [
+                {
+                    "$ref": "http://www.ibm.com/dba/schemas/#systemDocument"
+                },
+                {
+                    "type": "object",
+                    "description": "",
+                    "baclass": {
+                        "caDocTypeId": "19ed0fd0-9419-4ae0-8f99-fb4425cec379",
+                        "defaultRetentionPeriod": "Indefinite",
+                        "retentionPeriodUnits": ""
+                    },
+                    "properties": {
+                        "FederalIncomeTaxWithheld": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "FederalIncomeTaxWithheld",
+                                    "caKeyClassId": "3a72b6e4-3942-46c8-ae93-8c3a9347d626",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "EmployeeNameandAddress": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "EmployeeNameandAddress",
+                                    "caKeyClassId": "b69a327a-ef8f-4f88-b34f-23c255ec5926",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "EmployeeSocialSecurityNumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "EmployeeSocialSecurityNumber",
+                                    "caKeyClassId": "13b299d2-9b61-4c22-8527-5fb9d33d9c88",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "EmployerIdentificationNumber": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "EmployerIdentificationNumber",
+                                    "caKeyClassId": "dcdaf883-def0-425e-8280-a77144859753",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "EmployersNameandAddress": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "EmployersNameandAddress",
+                                    "caKeyClassId": "2b80d1e6-a892-4a8d-a614-32a23730f13e",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "SocialSecurityWages": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "SocialSecurityWages",
+                                    "caKeyClassId": "333c2043-5ead-4f9e-a099-2346bab482e4",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        },
+                        "WagesTipsOtherCompensation": {
+                            "allOf": [
+                                {
+                                    "$ref": "unmapped"
+                                },
+                                {
+                                    "caKeyClassName": "WagesTipsOtherCompensation",
+                                    "caKeyClassId": "62dfe730-364b-43a7-848f-4580ebbed5b2",
+                                    "caValueType": "text"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
